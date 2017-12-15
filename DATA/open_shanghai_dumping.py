@@ -33,8 +33,8 @@ where
     and longitude > 121.426425  - 0.015
     and avg_price > 0
     and avg_rating > 30
-    and service_score > 7
-    and review_count > 2000
+    and service_score > 6.5
+    and review_count > 1000
     and (c.parent = '美食'
     or  c.category = '美食')
     
@@ -142,8 +142,8 @@ where
     and longitude < 121.426425  + 0.015
     and longitude > 121.426425  - 0.015
     and service_score > 7    
-    and avg_rating > 40      
-    and review_count > 100    
+    and avg_rating > 35     
+    and review_count > 125    
     and (c.parent = '购物'
     or  c.category = '购物')
     
@@ -153,7 +153,7 @@ shop_place = pd.read_sql(query, conn)
 
 
 # In[37]:
-print(shop_place.describe())
+#print(shop_place.describe())
 
 Nbr_shop_around_U=shop_place.name.count()
 print('Number of Shop around you ')
