@@ -40,17 +40,22 @@ where
     
 '''
 
-food_place = pd.read_sql(query, conn)
+
+food_places = pd.read_sql(query, conn)
+
+
+
+
 
 
 # In[37]:
 
 
-#print(food_place.describe())
+#print(food_places.describe())
 
-Nbr_food_around_U=food_place.name.count()
+'''Nbr_food_around_U=food_places.name.count()
 print('Number of Restaurant around you ')
-print(Nbr_food_around_U)
+print(Nbr_food_around_U)'''
 
 # In[40]:
 
@@ -66,7 +71,7 @@ plt.style.use('ggplot')
 
 
 #plt.figure(figsize=(8,6))
-#plt.scatter( food_place.latitude, food_place.longitude)
+#plt.scatter( food_places.latitude, food_places.longitude)
 #plt.xlim( 31.177, 31.207 )
 #plt.ylim( 121.41, 121.441 ) 
 #plt.title('FOOD AROUND ME')
@@ -97,16 +102,16 @@ where
     
 '''
 
-cinema_place = pd.read_sql(query, conn)
+cinema_places = pd.read_sql(query, conn)
 
 
 # In[37]:
 
-#print(cinema_place.describe())
+#print(cinema_places.describe())
 
-Nbr_cine_around_U=cinema_place.name.count()
+'''Nbr_cine_around_U=cinema_places.name.count()
 print('Number of cinema around you ')
-print(Nbr_cine_around_U)
+print(Nbr_cine_around_U)'''
 
 
 # In[40]:
@@ -119,7 +124,7 @@ plt.style.use('ggplot')
 # In[42]:
 
 #plt.figure(figsize=(8,6))
-#plt.scatter( cinema_place.latitude, cinema_place.longitude)
+#plt.scatter( cinema_places.latitude, cinema_places.longitude)
 #plt.xlim( 31.177, 31.207 )
 #plt.ylim( 121.41, 121.441 ) 
 #plt.title('CINEMA AROUND ME')
@@ -149,15 +154,15 @@ where
     
 '''
 
-shop_place = pd.read_sql(query, conn)
+shop_places = pd.read_sql(query, conn)
 
 
 # In[37]:
-#print(shop_place.describe())
+#print(shop_places.describe())
 
-Nbr_shop_around_U=shop_place.name.count()
+'''Nbr_shop_around_U=shop_places.name.count()
 print('Number of Shop around you ')
-print(Nbr_shop_around_U)
+print(Nbr_shop_around_U)'''
 
 # In[40]:
 
@@ -169,7 +174,7 @@ plt.style.use('ggplot')
 # In[42]:
 
 #plt.figure(figsize=(8,6))
-#plt.scatter( shop_place.latitude, shop_place.longitude)
+#plt.scatter( shop_places.latitude, shop_places.longitude)
 #plt.xlim( 31.177, 31.207 )
 #plt.ylim( 121.41, 121.441 ) 
 #plt.title('SHOP AROUND ME')
@@ -198,15 +203,15 @@ where
     
 '''
 
-artculture_place = pd.read_sql(query, conn)
+artculture_places = pd.read_sql(query, conn)
 
 
 # In[37]:
-#print(artculture_place.describe())
+#print(artculture_places.describe())
 
-Nbr_art_culture_around_U=artculture_place.name.count()
+'''Nbr_art_culture_around_U=artculture_places.name.count()
 print('Number of Art & culture place around you ')
-print(Nbr_art_culture_around_U)
+print(Nbr_art_culture_around_U)'''
 
 # In[40]:
 
@@ -218,7 +223,7 @@ plt.style.use('ggplot')
 # In[42]:
 
 #plt.figure(figsize=(8,6))
-#plt.scatter( artculture_place.latitude, artculture_place.longitude)
+#plt.scatter( artculture_places.latitude, artculture_places.longitude)
 #plt.xlim( 31.177, 31.207 )
 #plt.ylim( 121.41, 121.441 ) 
 #plt.title('Art & Culture AROUND ME')
@@ -248,15 +253,15 @@ where
     
 '''
 
-escapegame_place = pd.read_sql(query, conn)
+escapegame_places = pd.read_sql(query, conn)
 
 
 # In[37]:
-#print(escapegame_place.describe())
+#print(escapegame_places.describe())
 
-Nbr_escape_game_around_U=escapegame_place.name.count()
+'''Nbr_escape_game_around_U=escapegame_places.name.count()
 print('Number of Escape game place around you ')
-print(Nbr_escape_game_around_U)
+print(Nbr_escape_game_around_U)'''
 
 # In[40]:
 
@@ -268,7 +273,7 @@ plt.style.use('ggplot')
 # In[42]:
 
 #plt.figure(figsize=(8,6))
-#plt.scatter( escapegame_place.latitude, escapegame_place.longitude)
+#plt.scatter( escapegame_places.latitude, escapegame_places.longitude)
 #plt.xlim( 31.177, 31.207 )
 #plt.ylim( 121.41, 121.441 ) 
 #plt.title('Escape Game AROUND ME')
@@ -300,15 +305,15 @@ where
     
 '''
 
-game_place = pd.read_sql(query, conn)
+game_places = pd.read_sql(query, conn)
 
 
 # In[37]:
-#print(game_place.describe())
+#print(game_places.describe())
 
-Nbr_game_center_around_U=game_place.name.count()
+'''Nbr_game_center_around_U=game_places.name.count()
 print('Number of Game center around you ')
-print(Nbr_game_center_around_U)
+print(Nbr_game_center_around_U)'''
 
 # In[40]:
 
@@ -319,7 +324,7 @@ plt.style.use('ggplot')
 # In[42]:
 
 #plt.figure(figsize=(8,6))
-#plt.scatter( game_place.latitude, game_place.longitude)
+#plt.scatter( game_places.latitude, game_places.longitude)
 #plt.xlim( 31.177, 31.207 )
 #plt.ylim( 121.41, 121.441 ) 
 #plt.title('Game center AROUND ME')
@@ -347,16 +352,16 @@ where
     
 '''
 
-swimming_place = pd.read_sql(query, conn)
+swimming_places = pd.read_sql(query, conn)
 
 
 # In[37]:
 
-#print(swimming_place.describe())
+print(swimming_places)
 
-Nbr_swimming_pool_around_U=swimming_place.name.count()
+'''Nbr_swimming_pool_around_U=swimming_places.name.count()
 print('Number of Swimming pool around you ')
-print(Nbr_swimming_pool_around_U)
+print(Nbr_swimming_pool_around_U)'''
 
 # In[40]:
 
@@ -367,7 +372,7 @@ plt.style.use('ggplot')
 # In[42]:
 
 #plt.figure(figsize=(8,6))
-#plt.scatter( swimming_place.latitude, swimming_place.longitude)
+#plt.scatter( swimming_places.latitude, swimming_places.longitude)
 #plt.xlim( 31.177, 31.207 )
 #plt.ylim( 121.41, 121.441 ) 
 #plt.title('Swimming pool AROUND ME')
@@ -398,17 +403,17 @@ where
     
 '''
 
-gym_place = pd.read_sql(query, conn)
+gym_places = pd.read_sql(query, conn)
 
 
 # In[37]:
 
 
-#print(gym_place.describe())
+#print(gym_places.describe())
 
-Nbr_gym_around_U=gym_place.name.count()
+'''Nbr_gym_around_U=gym_places.name.count()
 print('Number of Gym around you ')
-print(Nbr_gym_around_U)
+print(Nbr_gym_around_U)'''
 
 # In[40]:
 
@@ -424,7 +429,7 @@ plt.style.use('ggplot')
 
 
 #plt.figure(figsize=(8,6))
-#plt.scatter( gym_place.latitude, gym_place.longitude)
+#plt.scatter( gym_places.latitude, gym_places.longitude)
 #plt.xlim( 31.177, 31.207 )
 #plt.ylim( 121.41, 121.441 ) 
 #plt.title('GYM AROUND ME')
@@ -446,83 +451,4 @@ plt.style.use('ggplot')
 
 
 
-
-
-# In[52]:
-
-
-df = pd.read_csv('C:\\Users\\DELL\\Desktop\\Urban Data Hackathon\\UTSEUS-MOBIKE-shanghai_full.csv')
-
-
-# In[53]:
-
-
-query = '''
-SELECT business_id, group_concat(tag, ' ')as tags
-FROM venues_tags
-group by business_id
-'''
-df = pd.read_sql(query, conn)
-
-
-# In[54]:
-
-
-sentences = []
-for tags in df.tags.values:
-    if len(tags.split(' ')) > 1:
-        sentences.append(tags.split(' '))
-
-
-# In[55]:
-
-
-print (len(sentences))
-
-
-# In[58]:
-
-
-#login import
-from gensim.models import word2vec
-
-#set values for various parameters
-num_features = 500 #word vector dimensionality
-min_word_count = 10 #minimum word count
-num_workers = 4 #number of threads to run in parallel
-context = 3 #context windows
-downsampling = 1e-3
-
-model = word2vec.Word2Vec(sentences, workers=num_workers, size=num_features, min_count = min_word_count, window = context, sample = downsampling)
-
-model.init_sims(replace=True)
-model_name = "500features_10minwords_3context_dianping"
-model.save(model_name)
-
-
-# In[60]:
-
-
-
-G = nx.Graph()
-for tag in model.wv.vocab.keys():
-    G.add_node(tag)
-    for word, similarity in model.most_similar(tag):
-        G.add_node(word)
-        G.add_edge(tag, word, weight=similarity)
-nx.write_gexf(G, 'tags-similarity.gexf')
-        
-
-
-# In[61]:
-
-
-model.most_similar('PIZZA')
-
-
-# In[62]:
-
-
-for word, similarity in model.most_similar('PIZZA'):
-    print (word, similarity)
 
